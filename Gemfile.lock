@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jekyll-theme-prologue (0.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  jekyll-theme-prologue
+
+BUNDLED WITH
+   1.16.1
