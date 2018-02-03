@@ -1,3 +1,55 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: Doruk Kilitcioglu
-description: Personal Website of Doruk Kilitcioglu
+# subtitle:
+email: doruk.kilitcioglu@nyu.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal webpage of Doruk Kilitcioglu
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dorukkilitcioglu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author: Doruk Kilitcioglu
+avatar: assets/images/PPFilled.png
+# twitter_username: jekyllrb
+# github_username:  dorukkilitcioglu
+github_url: https://github.com/dorukkilitcioglu
+# googleplus_url:
+# instagram_url:
+linkedin_url: https://www.linkedin.com/in/dorukkilitcioglu/
+# pinterest_url:
+# slack_url:
+# twitter_url:
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-prologue
+collections: [sections]
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Google Analytics Tracking ID goes here:
+# google_analytics:
