@@ -34,7 +34,7 @@ linkedin_url: https://www.linkedin.com/in/dorukkilitcioglu/
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-prologue
+remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
 plugins:
   - jekyll-feed
