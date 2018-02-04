@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 hide: true
+title: DORUK KILITCIOGLU
 ---
-## DORUK KILITCIOGLU
-### Machine Learning/Data Science enthusiast and MS CS student @ NYU
+
+Machine Learning/Data Science enthusiast and MS CS student @ NYU
