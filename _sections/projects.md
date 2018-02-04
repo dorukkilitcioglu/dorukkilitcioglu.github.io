@@ -1,6 +1,7 @@
 ---
 title: Projects
 permalink: /projects/
+order: 2
 ---
 Listed below are my projects revolving around Machine Learning/Data Science.
 
