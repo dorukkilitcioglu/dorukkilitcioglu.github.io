@@ -1,3 +1,7 @@
+---
+title: Projects
+---
+
 ## Relation Extraction using Deep Learning
 TODO
 
