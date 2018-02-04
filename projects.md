@@ -38,7 +38,7 @@ Tags: Recommender Systems, Natural Language Processing, Machine Learning, NLTK, 
 
 ### [doc-annotate: A minimalistic tool for annotating documents](https://github.com/dorukkilitcioglu/doc-annotate)
 Description:  
-· Basic web tool for annotating the sentiment of articles
-· Allows for choosing between 3 levels of sentiments (positive, negative, neutral) and 3 levels of relevance (relevant, irrelevant, neutral)
+· Basic web tool for annotating the sentiment of articles  
+· Allows for choosing between 3 levels of sentiments (positive, negative, neutral) and 3 levels of relevance (relevant, irrelevant, neutral)  
 · Built using Flask & MongoDB  
 Tags: Data Collection, Data Annotation, Flask, Python
