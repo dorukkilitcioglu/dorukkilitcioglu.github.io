@@ -1,5 +1,6 @@
 ---
 title: Projects
+permalink: /projects/
 ---
 Listed below are my projects revolving around Machine Learning/Data Science.
 
