@@ -1,6 +1,3 @@
----
-hide: true
----
 ## Relation Extraction using Deep Learning
 TODO
 
