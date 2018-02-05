@@ -2,6 +2,7 @@
 title: Projects
 permalink: /projects/
 order: 2
+icon: fa-folder
 ---
 Listed below are my projects revolving around Machine Learning/Data Science.
 
