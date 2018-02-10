@@ -6,7 +6,7 @@ icon: fa-folder
 ---
 Listed below are my projects revolving around Machine Learning/Data Science.
 
-### [Relation Extraction using Deep Learning](https://drive.google.com/open?id=1kIAs3XkIS0_SyRj2qUhTgLcbFDghASwyNaTkM3g9te8)
+### [Relation Extraction using Deep Learning](https://github.com/dorukkilitcioglu/relation-extraction-nyu)
 Description:  
 · Conducted a research on extracting 19 different kinds of relations between entities  
 · Read & implemented ideas from multiple different research papers  
