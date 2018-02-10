@@ -3,8 +3,11 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-hide: true
-title: DORUK KILITCIOGLU
+title: Home
+icon: fa-home
+cover-photo: assets/images/valley.jpg
+cover-photo-alt: A blurred valley
+auto-header: <h2 style="color:#fff; font-weight:bold">DORUK KILITCIOGLU</h1>
 ---
 
-Machine Learning/Data Science enthusiast and MS CS student @ NYU
+<span style="color:#fff;">Machine Learning/Data Science enthusiast and MS CS student @ NYU</span>
