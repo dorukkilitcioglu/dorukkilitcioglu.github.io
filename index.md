@@ -7,7 +7,7 @@ title: Home
 icon: fa-home
 cover-photo: assets/images/valley.jpg
 cover-photo-alt: A blurred valley
-auto-header: <h2 style="color:#fff; font-weight:bold">DORUK KILITCIOGLU</h1>
+auto-header: <h2 style="color:#fff; font-weight:bold">DORUK KILITCIOGLU</h2>
 ---
 
 <span style="color:#fff;">Machine Learning/Data Science enthusiast and MS CS student @ NYU</span>
