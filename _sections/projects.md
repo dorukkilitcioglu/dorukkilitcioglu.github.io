@@ -15,6 +15,8 @@ Listed below are my projects revolving around Machine Learning/Data Science.
 Tags: Natural Language Processing, Recurrent Neural Networks, Machine Learning, Tensorflow, Python
 
 ### [Financial Analysis using Machine Learning Methods](https://drive.google.com/file/d/11BtXG6HwG4kmKOdcavfaVfvwHuWEYn2u/view?usp=sharing&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Blo7MUoC7TXiwgAlrq5uXvg%3D%3D)
+<br/>
+<img src="assets/images/projects/financial.png" width="70%" />  
 Description:  
 · Conducted machine learning based analysis on various stock prices & estimated future prices  
 · Collected and annotated relevant articles on stocks  
