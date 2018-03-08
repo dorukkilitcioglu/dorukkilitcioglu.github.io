@@ -7,7 +7,8 @@ icon: fa-folder
 Listed below are my projects revolving around Machine Learning/Data Science.
 
 ### [Relation Extraction using Deep Learning](https://github.com/dorukkilitcioglu/relation-extraction-nyu)
-Description:  
+<br/>
+<img src="assets/images/projects/relation_extraction.png" title="http://tsong.me/blog/pcnn/" width="70%" />  
 · Conducted a research on extracting 19 different kinds of relations between entities  
 · Read & implemented ideas from multiple different research papers  
 · Achieved 49% F1-score using CNNs and 51% F1-score using Bi-LSTMs on ACE 2004 dataset  
@@ -20,15 +21,17 @@ Description:
 · Obtained 54% accuracy (over baseline 50%) with a Hidden Markov Model variant with sentiment analysis  
 Tags: Machine Learning, Hidden Markov Model, Finance, Natural Language Processing, Scikit-Learn, Python
 
-### [Using Deep Recurrent Neural Networks for microRNA Target Prediction](https://docs.google.com/presentation/d/1IE70cJ9ZrDdUzsSLvk3qMgOwp5cQ-d2Zs_UU1s0ZMh0/edit?usp=sharing&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Blo7MUoC7TXiwgAlrq5uXvg%3D%3D)
-Description:  
+### [Deep Recurrent Neural Networks for microRNA Target Prediction](https://docs.google.com/presentation/d/1IE70cJ9ZrDdUzsSLvk3qMgOwp5cQ-d2Zs_UU1s0ZMh0/edit?usp=sharing&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Blo7MUoC7TXiwgAlrq5uXvg%3D%3D)
+<br/>
+<img src="assets/images/projects/microrna_target.png" title="https://commons.wikimedia.org/wiki/File:Gated_Recurrent_Unit.svg" width="70%" />  
 · Implemented a research paper on Deep RNN model for miRNA target prediction  
 · Simplified the model while maintaining 94% accuracy and 96% F1-score  
 · Showed the importance of gathering negative samples  
 Tags: Bioinformatics, Deep Learning, Machine Learning, Keras, Python
 
 ### [A Monte Carlo Algorithm for Cold Start Recommendation](https://github.com/dorukkilitcioglu/boun_cmpe548_project)
-Description:  
+<br/>
+<img src="assets/images/projects/monte_carlo.png" title="http://wwwconference.org/proceedings/www2014/proceedings/p327.pdf" width="60%" />  
 · Implemented a research paper on collaborative filtering based Monte Carlo Algorithm for cold-start recommendation  
 · Decreased MAE (Mean Absolute Error) by 1.8% by using better transition priors and verified results using MovieLens database  
 Tags: Recommender Systems, Monte Carlo Methods, Machine Learning, Python
