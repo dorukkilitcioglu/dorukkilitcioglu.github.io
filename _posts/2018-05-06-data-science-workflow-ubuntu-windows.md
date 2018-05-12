@@ -50,7 +50,31 @@ function subl {
 }
 ```
 
-With this function, you can call `subl` from anywhere with the same arguments you would do elsewhere. The one caveat of this method is that you can't interact with Linux internal files (files that are not part of the `/mnt/c/` directory). I personally prefer to use a second Sublime Text installation, one that lives in WSL and is not as response as the Windows one, using an alias like `subll`.
+With this function, you can call `subl` from anywhere with the same arguments you would do elsewhere. The one caveat of this method is that you can't interact with Linux internal files (files that are not part of the `/mnt/c/` directory). Luckily, there's a nifty tool called `rsub` that is built for using your local Sublime Text to edit remote files.
+
+#### `rsub` and other tricks
+
+[rsub](https://github.com/henrikpersson/rsub) is a tool for editing your remote files in your local Sublime Text editor. You need to download either the [Ruby version](https://github.com/textmate/rmate/tree/54f9091d35a17b70019d364604e087800bfd7b7e) or the [Shell version](https://github.com/aurora/rmate/tree/57b607eb88d9d3d766a2855fd80b1b0148550611) of `rmate`. You should then save it named as `rmate` to somewhere on your `PATH` variable. You can test to see if it is working by calling `rmate`, which should give you a similar output to:
+```
+usage: /home/doruk/Tools/bin/rmate [-H host-name] [-p port-number] [-w] [-f] [-v] file-path
+```
+
+Once that is done, install `rsub` on your Sublime Text using [package control](https://packagecontrol.io/packages/rsub). Finally, replace the `subl` function in your `.bashrc` to the following:
+
+```
+function subl {
+    CUR_PATH=`readlink -f $1`
+    if [[ $CUR_DIR == /mnt/c/* ]]; then
+        /mnt/c/Program\ Files/Sublime\ Text\ 3/subl.exe $CUR_PATH
+    else
+        rmate $CUR_PATH
+    fi
+}
+```
+
+This code will first try to identify whether a given path is a symbolic link or not, and it gets the actual path if it is a symbolic link. From there, it checks if the path is a Linux internal path, or a path that points to your `C:` drive. IF it points to your `C:` drive, it automatically runs the original Sublime Text command we set up. If not, it actually runs the `rmate` tool we just set up, which opens the file up in your Sublime Text if you have `rsub` installed.
+
+And now, you can edit all your files with your local Sublime Text.
 
 ### Jupyter Notebook
 
