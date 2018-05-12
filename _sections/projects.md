@@ -7,12 +7,20 @@ icon: fa-folder
 Listed below are my projects revolving around Machine Learning/Data Science.
 
 ### [Books2Rec: Machine Learning meets Reading](https://books2rec.me)
-<sub>Recommender Systems · Machine Learning · Latent Factor Models</sub>
+<sub>Recommender Systems · Machine Learning · Latent Factor Models</sub>  
 <br/>
 <img src="assets/images/projects/books2rec.png" title="https://books2rec.me" width = "70%" />  
 · Built a hybrid Recommender System, using Goodreads book ratings and book features  
 · Used SVD and Autoencoders to achieve a RMSE (Root Mean Squared Error) of 0.843  
 · Available live at [books2rec.me](https://books2rec.me)  
+
+### [Visualizing the Rental Housing Crisis in US](https://dorukkilitcioglu.shinyapps.io/RentBurden/)
+<sub>Data Science · Data Visualization · RShiny</sub>  
+<br/>
+<img src="assets/images/projects/rent_burden.png" title="https://dorukkilitcioglu.shinyapps.io/RentBurden/" width="70%" />  
+· Visualized the increase in rents with respect to income levels in major metropolitan areas of the US  
+· Produced an RShiny app that showcases the differences between the metropolitan areas  
+· Available live at [dorukkilitcioglu.shinyapps.io/RentBurden/](https://dorukkilitcioglu.shinyapps.io/RentBurden/)  
 
 ### [Relation Extraction using Deep Learning](https://github.com/dorukkilitcioglu/relation-extraction-nyu)
 <sub>Natural Language Processing · Recurrent Neural Networks · Machine Learning · Tensorflow · Python</sub>  
