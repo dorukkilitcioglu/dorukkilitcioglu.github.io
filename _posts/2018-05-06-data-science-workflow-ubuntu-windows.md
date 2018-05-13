@@ -64,8 +64,8 @@ Once that is done, install `rsub` on your Sublime Text using [package control](h
 ```
 function subl {
     CUR_PATH=`readlink -f $1`
-    if [[ $CUR_DIR == /mnt/c/* ]]; then
-        /mnt/c/Program\ Files/Sublime\ Text\ 3/subl.exe $CUR_PATH
+    if [[ $CUR_PATH == /mnt/c/* ]]; then
+        /mnt/c/Program\ Files/Sublime\ Text\ 3/subl.exe "C:${CUR_PATH:6}"
     else
         rmate $CUR_PATH
     fi
