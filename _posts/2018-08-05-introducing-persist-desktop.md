@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing persist-desktop"
 date: 2018-08-05 10:07:00 -0400
-categories: misc
+categories: programming
 tags: windows workflow
 ---
 
