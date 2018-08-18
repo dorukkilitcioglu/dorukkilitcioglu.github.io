@@ -34,19 +34,12 @@ linkedin_url: https://www.linkedin.com/in/dorukkilitcioglu/
 
 # Build settings
 markdown: kramdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
 # theme: jekyll-theme-prologue
 remote_theme: dorukkilitcioglu/jekyll-theme-prologue
 collections: [sections]
 plugins:
   - jekyll-feed
+highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
