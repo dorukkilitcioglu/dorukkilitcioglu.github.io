@@ -10,6 +10,15 @@ Representation Learning is a relatively new term that encompasses many different
 
 Any Machine Learning model requires some features, numerical representations of data, in order to work. The traditional method is to painstakingly measure some features of the data, and then employ feature engineering in order to extract some new features, either based on your intuition or based on the previous research.
 
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src='/assets/images/posts/representation-learning-1/word_repr.png' alt='Example of word representations' width="70%"/>
+        <figcaption><i><a href="https://www.memsource.com/blog/2017/09/19/neural-machine-translation-the-rising-star/">Image Source</a></i></figcaption>
+    </figure>
+</div>
+
+<br/>
+
 In this blog post series, I will heavily rely on the ["Representation Learning: A Review and New Perspectives"](https://arxiv.org/abs/1206.5538) paper by Bengio et al., which has been immensely useful for me to learn how to think about representations, although I will be including stuff that is older and was not covered in the paper (such as t-SNE, PCA, etc.), and also stuff that is not in the paper simply because they were published after the paper was written (such as Generative Adversarial Networks). Let's begin.
 
 ## Feature Engineering
