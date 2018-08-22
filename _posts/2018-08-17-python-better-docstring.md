@@ -4,7 +4,7 @@ title: "A case for better Python docstrings"
 date: 2018-08-17 20:27:00 -0400
 categories: programming
 tags: python
-
+image: /assets/images/posts/python-better-docstring/python-docstring.png
 ---
 
 I have been using Python daily for 3 years, and working professionally with it for about a year now. It is a great language, and I'm grateful that I get to work with it every day. However, my biggest gripe with Python was the rather uninspiring docstrings found online and in style guides. Here, I propose a **clean**, **explicit**, and **visually appealing** alternative.
