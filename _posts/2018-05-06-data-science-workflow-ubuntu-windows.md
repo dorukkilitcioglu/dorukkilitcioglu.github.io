@@ -4,9 +4,19 @@ title: "Data Science workflow using Ubuntu Subsystem on Windows"
 date: 2018-05-06 13:08:00 -0400
 categories: data-science misc
 tags: ubuntu windows bash eclipse jupyter-notebook
+image: /assets/images/posts/data-science-workflow-ubuntu-windows/wsl.png
 ---
 
 Microsoft's latest push for bringing developers to Windows comes in the form of embracing Linux as part of their system. [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about), also known as WSL, has been around for over a year now. After getting fed up with using Linux VMs for development environment, and later getting fed up with having to switch operating systems in a dual-boot config, I was ready to try it. I'm very glad that I did.
+
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src='/assets/images/posts/data-science-workflow-ubuntu-windows/wsl.png' alt='Example of WSL apps' width="100%"/>
+        <figcaption><i>Current Linux distros available for WSL</i></figcaption>
+    </figure>
+</div>
+
+<br/>
 
 There is one point I cannot stress enough: WSL is **NOT** a complete replacement for a Linux dual-boot or a Linux VM with GPU pass-through. It will most definitely be slower than those. You [cannot](https://github.com/Microsoft/WSL/issues/1788) use a GPU for now, so please do not try to run TensorFlow models on GPU with this.
 
