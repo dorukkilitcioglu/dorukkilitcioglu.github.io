@@ -4,6 +4,7 @@ title: "Introducing Books2Rec"
 date: 2018-05-13 21:25:00 -0400
 categories: data-science machine-learning
 tags: recommender-systems
+image: /assets/images/posts/introducing-books2rec/books2rec-charlie-itemmatrix.png
 ---
 I am proud to announce [Books2Rec](https://books2rec.me), the book recommendation system I have been working for the last couple of months, is live. Using your [Goodreads](https://www.goodreads.com/) profile, [Books2Rec](https://books2rec.me) uses Machine Learning methods to provide you with highly personalized book recommendations. Don't have a Goodreads profile? We've got you covered - just search for your favorite book.
 
