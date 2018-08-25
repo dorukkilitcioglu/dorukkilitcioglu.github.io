@@ -4,6 +4,7 @@ title:  "Why you should use PCA before Decision Trees"
 date:   2018-08-10 22:50:00 -0400
 categories: data-science machine-learning
 tags: dimensionality-reduction pca decision-tree representation-learning
+image: /assets/images/posts/pca-decision-tree/pca_decision_tree.png
 ---
 
 Dimensionality Reduction techniques have been consistently useful in Data Science and Machine Learning. It can reduce training times, allow you to remove features that do not hold any predictive value, and it even works for noise reduction. In this blog post, we are going to focus on why it might even make your classifier perform better.
@@ -11,6 +12,14 @@ Dimensionality Reduction techniques have been consistently useful in Data Scienc
 I have known these for quite a while now. However, seeing how much it helps in a low-compute, prototyping environment was a huge wake-up call for me.
 
 Note: this post can be considered a part 1.5 of my Representation Learning series. See part 1 [here]({% post_url 2018-02-24-representation-learning-introduction %}).
+
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src='/assets/images/posts/pca-decision-tree/pca_decision_tree.png' alt="PCA + Decision Tree = Skewed Decision Tree" width="100%"/>
+        <figcaption><i><a href="https://sebastianraschka.com/faq/docs/lda-vs-pca.html">PCA</a> + <a href="https://medium.com/machine-learning-bites/machine-learning-decision-tree-classifier-9eb67cad263e">Decision Tree</a> ?= Skewed Decision Tree.</i></figcaption>
+    </figure>
+</div>
+<br/>
 
 ## The Setup
 
