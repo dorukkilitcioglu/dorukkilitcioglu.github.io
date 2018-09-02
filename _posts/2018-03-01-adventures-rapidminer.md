@@ -58,6 +58,7 @@ Fortunately, we did find an extension (simply titled `Recommendations`) for Rapi
 What it did was to give us a very barebones baseline. Again, since the number of users are so low, we do not want to draw any conclusions, but it still is an indication to what is possible. I'm not going to go in-depth in these metrics, as this blog post is mainly for exploring RapidMiner and not the Recommender Systems themselves.
 
 #### Information Retrieval
+This is the process that we used for making recommendations and evaluating it as an information retrieval problem:
 
 ![Information Retrieval Task](/assets/images/posts/adventures-rapidminer/ir.png "Information Retrieval Task")
 
@@ -70,6 +71,7 @@ NDCG: 0.288
 MAP: 0.025  
 
 #### Rating Prediction
+This is the process that we used for making recommendations and evaluating it as an rating prediction problem:
 
 ![Rating Prediction Task](/assets/images/posts/adventures-rapidminer/rp.png "Rating Prediction Task")
 
@@ -79,4 +81,4 @@ MAE: 0.685
 NMAE: 0.171  
 
 ## Going forward
-Our next stop will be [Apache Mahout](https://mahout.apache.org/), which has extensive support for recommender systems, and is therefore a great starting point. You can see our whole journey in our [GitHub Repo](https://github.com/dorukkilitcioglu/book-recommender-system).
+Our next stop will be [Apache Mahout](https://mahout.apache.org/), which has extensive support for recommender systems, and is therefore a great starting point. You can see our whole journey (including the `rmp` files for the above processes) in our [GitHub Repo](https://github.com/dorukkilitcioglu/book-recommender-system).
