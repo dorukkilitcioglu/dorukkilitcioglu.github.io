@@ -88,6 +88,8 @@ Equation $(9)$ means that $V$ is the matrix of eigenvectors for the matrix $M^TM
 
 We can again drop the smallest $k$ eigenvalues, which is equivalent to dropping the last $k$ rows and columns from the $\Sigma$ matrix, and dropping the last $k$ columns from both $U$ and $V$ (note that this drops rows from $V^T$). If all you want is to then use this smaller data, you can use $U\Sigma$ as an input to the rest of your Machine Learning algorithm.
 
+You can also calculate the amount of total variance you're losing by dropping the last $k$ columns looking at the squares of the singular values. The total variance is the sum of squares of all singular values, and you can calculate which percentage of variance you retain after you drop the last $k$ by summing up the squares of all the remaining singular values and dividing by the original sum.
+
 ### Learned Representation
 
 As mentioned before, $U$ and $V$ learn to represent the data points and the features in terms of latent factors. If you want to transform a new datapoint $q$ and you want to transform it into a distribution of these latent factors, you only need to compute $qV$, which will give you a vector of size $r$. You can then re-map this vector into the original feature-space using $qVV^T$. This is useful if $q$ has a lot of missing data, which can be estimated through this procedure. This is also the basis of [doing recommendations using SVD]({% post_url 2018-05-13-introducing-books2rec %}).
