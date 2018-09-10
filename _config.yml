@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dorukkilitcioglu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: Doruk Kilitcioglu
 avatar: assets/images/PPFilled.png
+permalink: /:year/:month/:day/:title:output_ext
 # twitter_username: jekyllrb
 # github_username:  dorukkilitcioglu
 github_url: https://github.com/dorukkilitcioglu
@@ -39,6 +40,7 @@ remote_theme: dorukkilitcioglu/jekyll-theme-prologue
 collections: [sections]
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 highlighter: rouge
 
 # Exclude from processing.

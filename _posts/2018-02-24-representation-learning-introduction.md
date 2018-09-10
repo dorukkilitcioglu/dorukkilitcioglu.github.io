@@ -5,6 +5,7 @@ date:   2018-02-24 12:01:00 -0500
 categories: machine-learning
 tags: representation-learning
 image: /assets/images/posts/representation-learning-1/word_repr.png
+redirect_from: "/machine-learning/2018/02/24/representation-learning-introduction.html"
 ---
 
 Representation Learning is a relatively new term that encompasses many different methods of extracting some form of **useful representation** of the data, based on the data itself. Does that sound too abstract? That's because it is, and it is purposefully so. Feature learning, Dimensionality reduction, Data reduction, and even Matrix Factorization are all parts of Representation Learning.

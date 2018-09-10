@@ -5,6 +5,7 @@ date: 2018-03-01 11:25:00 -0500
 categories: data-science
 tags: rapidminer recommender-systems
 image: /assets/images/posts/adventures-rapidminer/rp.png
+redirect_from: "/data-science/2018/03/01/adventures-rapidminer.html"
 ---
 
 For our [Big Data Science course @ NYU](https://cs.nyu.edu/~abari/TeachingBDS.html), me, [Nick](https://nickgreenquist.github.io/), and [Amit](https://panghalamit.github.io/) are building a [Book Recommender System](https://github.com/dorukkilitcioglu/book-recommender-system), specifically for using with [GoodReads](https://www.goodreads.com/). Although the exact details of what we're doing is yet to be ironed out, we though it was a good idea to get a quick and dirty baseline with [RapidMiner](https://rapidminer.com/). More than a couple of hours later, I can safely say that while we did get a baseline, it ended up more work than intended.

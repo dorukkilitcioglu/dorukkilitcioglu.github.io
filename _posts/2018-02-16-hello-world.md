@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2018-02-16 21:27:00 -0500
 categories: misc
+redirect_from: "/misc/2018/02/17/hello-world.html"
 ---
 
 Welcome to the blog. This blog will house my adventures through grad school and beyond. The contents of this blog will therefore (presumably) be about Data Science and Machine Learning, though it is very much possible that I might add in some other random stuff.

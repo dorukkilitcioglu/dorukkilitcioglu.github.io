@@ -5,6 +5,7 @@ date:   2018-08-10 22:50:00 -0400
 categories: data-science machine-learning
 tags: dimensionality-reduction pca decision-tree representation-learning
 image: /assets/images/posts/pca-decision-tree/pca_decision_tree.png
+redirect_from: "/data-science/machine-learning/2018/08/11/pca-decision-tree.html"
 ---
 
 Dimensionality Reduction techniques have been consistently useful in Data Science and Machine Learning. It can reduce training times, allow you to remove features that do not hold any predictive value, and it even works for noise reduction. In this blog post, we are going to focus on why it might even make your classifier perform better.

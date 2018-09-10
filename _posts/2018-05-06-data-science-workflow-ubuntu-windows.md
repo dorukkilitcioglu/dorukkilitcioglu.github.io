@@ -5,6 +5,7 @@ date: 2018-05-06 13:08:00 -0400
 categories: data-science programming
 tags: ubuntu windows bash eclipse jupyter-notebook
 image: /assets/images/posts/data-science-workflow-ubuntu-windows/wsl.png
+redirect_from: "/data-science/programming/2018/05/06/data-science-workflow-ubuntu-windows.html"
 ---
 
 Microsoft's latest push for bringing developers to Windows comes in the form of embracing Linux as part of their system. [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about), also known as WSL, has been around for over a year now. After getting fed up with using Linux VMs for development environment, and later getting fed up with having to switch operating systems in a dual-boot config, I was ready to try it. I'm very glad that I did.

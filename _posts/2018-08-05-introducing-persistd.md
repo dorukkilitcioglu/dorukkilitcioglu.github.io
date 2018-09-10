@@ -5,6 +5,7 @@ date: 2018-08-05 10:07:00 -0400
 categories: programming
 tags: windows workflow
 image: /assets/images/projects/persistd.png
+redirect_from: "/programming/2018/08/05/introducing-persistd.html"
 ---
 
 [persistd](https://github.com/dorukkilitcioglu/persistd) is a workspace/workflow manager made for multi-tasking developers. It allows you to persist your virtual desktop over multiple reboots. Automatically open all your relevant programs, and close them when you're done for the day. Never fear the Windows updates again.
