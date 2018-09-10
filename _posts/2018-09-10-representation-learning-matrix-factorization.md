@@ -21,7 +21,7 @@ Note: this post is part 2 of my Representation Learning series. See [part 1]({% 
 
 ## Matrix Factorization
 
-Matrix factorization is a way of decomposing any matrix $M$ into multiple other matrices. Often this done for two reasons: in order to reduce the matrix to a lower _rank_ while keeping as much information as possible (dimensionality reduction), or to expose some underlying _factors_ that appear naturally in the data. As this is a series about representation learning, we will be mostly concerned about exposing the underlying factors.
+Matrix factorization is a way of decomposing any matrix $M$ into multiple matrices. Often this is done for two reasons: in order to reduce the matrix to a lower _rank_ while keeping as much information as possible (dimensionality reduction), or to expose some underlying _factors_ that appear naturally in the data. As this is a series about representation learning, we will be mostly concerned about exposing the underlying factors.
 
 In the context of Machine Learning, it's a good idea to think of the matrix $M$ as your data matrix, with $n$ data points and $m$ features. This can be the values you get from a database table or a csv file, or a tf-idf representation of documents, or anything that you have previously translated into a matrix of numbers.
 
