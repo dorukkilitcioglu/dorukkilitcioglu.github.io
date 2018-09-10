@@ -82,7 +82,7 @@ $$
 
 Decomposing these equations, equation $(1)$ is the base definition. Equation $(2)$ takes its transpose, which can be simplified into equation $(3)$ because $\Sigma$ is a diagonal matrix. Equation $(4)$ multiplies both sides by $M$ on the right, and equation $(5)$ uses the base definition to extend $M$. Equation $(6)$ uses the fact that $U$ is column-orthonormal, and therefore its multiplication with its transpose gives the identity matrix $I$, which can safely be ignored. Equation $(7)$ simplifies the multiplication of two $\Sigma$ as when you multiply a diagonal matrix by itself, you simply square its values. Finally, equation $(8)$ multiplies both sides by $V$ on the right, and since $V$ is also column-orthonormal, $V^TV$ also gives the identity matrix, which is again ignored to end up with equation $(9)$.
 
-Equation $(9)$ means that $V$ is the matrix of eigenvectors for the matrix $M^TM$. A similar derivation can also be made to obtain $U$ from $MM^T$. Also seen from the same equation, the matrix of eigenvalues for $M^TM$ is the square of the singular value matrix $\Sigma$. We again rearrange the eigenvectors matrix such that $\Sigma$.
+Equation $(9)$ means that $V$ is the matrix of eigenvectors for the matrix $M^TM$. A similar derivation can also be made to obtain $U$ from $MM^T$. Also seen from the same equation, the matrix of eigenvalues for $M^TM$ is the square of the singular value matrix $\Sigma$. We again rearrange the eigenvectors matrix such that $\Sigma$ is sorted in the decreasing order.
 
 ### Dimensionality Reduction
 
