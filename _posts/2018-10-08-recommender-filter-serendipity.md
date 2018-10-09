@@ -14,7 +14,7 @@ Recommender systems is at the forefront of the ways in which content-serving web
 
 ### What the user wants
 
-As a huge recommender systems geek, I am always pleasantly surprised whenever I see good recommender system. I am interested in consuming a lot of content (and I do), but there are not enough hours in the day for me to personally go through everything available for me to consume. I want recommender systems that can understand what I really want to read/listen to/consume at that exact moment, perhaps even when I don't know what I want.
+As a huge recommender systems geek, I am always pleasantly surprised whenever I see a good recommender system. I am interested in consuming a lot of content (and I do), but there are not enough hours in the day for me to personally go through everything available for me to consume. I want recommender systems that can understand what I really want to read/listen to/consume at that exact moment, perhaps even when I don't know what I want.
 
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
@@ -23,7 +23,7 @@ As a huge recommender systems geek, I am always pleasantly surprised whenever I 
     </figure>
 </div>
 
-It used to be that when the content available to you (either through the results of a search, or some other way of wading through the available content like a top 100 list), you had to narrow down your results using some sort of filtering, be it a longer, more explicit search term, date restrictions, including and excluding certain tags, etc.
+It used to be that when the content available to you (either through the results of a search, or some other way of wading through the available content like a top 100 list), you had to narrow down your results using some sort of filtering. This filtering often took the form of longer, more explicit search terms, date restrictions, including and excluding certain tags, and many others.
 
 Those days are now over.
 
@@ -47,7 +47,7 @@ Let's take a closer look to how an average website can use recommendations to im
 4. Company X invests more resources into their personalizations. Multiple Data Scientists are working on implementing better Machine Learning models that perform better and better on their historical data, as they acquire more and more data.
 5. They automate the validation such that they can set specific revenue/user/conversion rate/other KPI targets in any combination and try to optimize it using A/B/n testing, which automatically incorporates any new Machine Learning model, constantly improving the quality of recommendations while achieving better and better targets.
 
-This is indeed the dream scenario. You have the historical data points that can provide some training targets (loss functions) and testing targets for your Machine Learning models, and even though you know they are not necessarily a good indicator for the real-world value of a recommender system, you have A/B/n tests to optimize for the real-world results. Everything here can be quantitatively analyzed.
+This is indeed the dream scenario. You have the historical data points that can provide some training targets (loss functions) and testing targets for your Machine Learning models, and even though you know they are not necessarily a good indicator for the real-world value of a recommender system, you have A/B tests to optimize for the real-world results. Everything here can be quantitatively analyzed.
 
 Well, expect for the "quality" of recommendations. And speaking of which, how do you even _define_ the quality of a recommendation?
 
@@ -55,7 +55,7 @@ Well, expect for the "quality" of recommendations. And speaking of which, how do
 
 As mentioned before, there are a couple of practical and ethical issues with this approach.
 
-In the context of a behemoth like Google, a recommender system has the ability to affect the very fabric of our society, and unfortunately, we are yet to understand the full implications of _how_ it affects the society. It is obvious that Google facilitates a lot of the information flow on the internet, and getting cut off from Google is therefore a huge deal, but when it comes to quantifying the effects of this flow of information, we are stumped.
+In the context of a behemoth like Google, a recommender system has the ability to affect the very fabric of our society, and unfortunately, we are yet to understand the full implications of _how_ it affects the society. It is obvious that Google facilitates a lot of the information flow on the internet, and getting cut off from Google is therefore a huge deal. But when it comes to quantifying the effects of this flow of information, we are stumped.
 
 That does not mean we cannot reason about how recommendations _should_ look like, and talk about some important concepts for recommendations in general. Keep in mind though, all of these concepts are product dependant: you will have to choose whether that is relevant to you or your customers.
 
@@ -80,7 +80,7 @@ To give a personal example, I really like listening to a single song until I'm s
     </figure>
 </div>
 
-Of course, this seemingly runs contrary to the previous notion of getting relevant recommendations, if that will hit a point of diminishing returns. The key aspect here is timing: you are likely to get sick of seeing the same type of recommendations (based on your historical data) during a single visit to a website, but when you come back a week later, you don't want to start from somewhere far away from your historical data.
+Of course, this seemingly runs contrary to the previous notion of getting relevant recommendations; that will hit a point of diminishing returns. The key aspect here is timing: you are likely to get sick of seeing the same type of recommendations (based on your historical data) during a single visit to a website, but when you come back a week later, you don't want to start from somewhere far away from your historical data.
 
 Recommender systems typically make the distinction between historical and contextual (session-based) recommendations. Historical recommenders make use of the full extent of your historical data to find the next thing you would want to watch, while contextual recommenders take a look at your current session (think of it like the last hour of your Spotify/Youtube session) and predict what would best fit to you _right now_.
 
@@ -94,7 +94,7 @@ What happens when you finish consuming the best possible content?
 
 The recommender system will keep recommending you the same _type_ of content, but because you've already consumed the best, each and every one of them will be **worse** than the previous.
 
-> By doing its job too good, a recommender system can reduce your future enjoyment.
+> By doing its job too well, a recommender system can reduce your future enjoyment.
 
 Now, of course, a lot of content is produced every day, and there's a very good chance that the best possible content for you is not produced yet. But the fact remains that the top N content for you (or the top N content for the general public) is a hard list to get into, and you might get a better overall enjoyment by spacing the best content.
 
@@ -119,7 +119,7 @@ Note: A related term that is more associated with politics is [echo chamber](htt
 
 ### Diversification
 
-Diversification is a way in which we can fight the effects of the filter bubble and diminishing returns. Unfortunately, it is not natural byproduct of recommender systems; instead, we have to work for it.
+Diversification is a way in which we can fight the effects of the filter bubble and diminishing returns. Unfortunately, it is not a natural byproduct of recommender systems; instead, we have to work for it.
 
 I have observed that users can be broadly categorized into two categories in terms of their taste diversity:
 
@@ -165,7 +165,7 @@ However, a book is a longer term investment. It might take you a 100 pages to re
 
 ## A case study in algorithmic confounding
 
-A recent paper<sup>[4]</sup> from the researchers at Princeton University discusses the further effects of the feedback loop generated by a recommender system. More specificly, they look at the confounding that occurs when models attempt to capture user preferences without accounting for the fact that the choices the user was presented with was also generated by the model, weakening the causal impact of recommendations on user behavior.
+A recent paper<sup>[4]</sup> from the researchers at Princeton University discusses the further effects of the feedback loop generated by a recommender system. More specifically, they look at the confounding that occurs when models attempt to capture user preferences without accounting for the fact that the choices the user was presented with was also generated by the model, weakening the causal impact of recommendations on user behavior.
 
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
@@ -199,11 +199,13 @@ They find that homogenization (captured as the y-axis of the following plot) cor
     </figure>
 </div>
 
-It is therefore important that we try to keep our recommendations as diverse as possible, but at the same time, balance them with recommendations that make sense for the users. Again, we can draw an analogy to the explore/exploit problem with Reinforcement Learning methods.
+It is therefore important that we try to keep our recommendations as diverse as possible, but at the same time, balance them with recommendations that make sense for the users. Again, we can draw an analogy to the explore/exploit problem with Reinforcement Learning methods. If we really want to achieve the best possible outcome, we need to find the right balance and work hard to keep it there.
 
 ## Conclusion
 
+Thanks to a growing interest from both the academia and the industry, we have today a lot of tools to make recommendations, and a better understanding of our tools. However, we are not yet at a point where we fully understand the consequences of our choices when building a recommender system. There is no free lunch, and there are always consequences to our choices, even if we cannot immediately see them.
 
+I hope this post leaves you with some general ideas on what sort of stuff you have to keep an eye out for if you want to give the users the best experience possible. As the designers of recommender systems, we have the power to influence what reaches a user, and what doesn't. It is up to us to use that power wisely.
 
 ## References
 
@@ -211,6 +213,3 @@ It is therefore important that we try to keep our recommendations as diverse as 
 2. [McKinsey](http://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers)
 3. [Mixture-of-tastes Models for Representing Users with Diverse Interests](https://arxiv.org/abs/1711.08379)
 4. [How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility](https://arxiv.org/abs/1710.11214)
-
-todo
-exploration vs exploitation
