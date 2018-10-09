@@ -4,7 +4,7 @@ title: "Recommender Systems: From Filter Bubble to Serendipity"
 date: 2018-10-06 9:30:00 -0400
 categories: data-science machine-learning
 tags: recommender-systems
-image: /assets/images/posts/recommender-filter-serendipity/spotify_recs.png
+image: /assets/images/posts/recommender-filter-serendipity/feedback_loop.png
 ---
 Recommender systems power a lot of our day to day interactions with the content we see on the internet. With over 2.5 quintillion bytes of data created each day, the last two years alone make up 90% of the data in the world <sup>[1]</sup>. We produce content at a level that is simply impossible to consume in one lifetime, and that makes recommender systems inevitable. However, as Uncle Ben said, with great power comes great responsibility. Here I talk about some of the practical and ethical problems that recommender systems raise, and how we can go about solving them.
 
@@ -33,7 +33,7 @@ Does that sound spoiled? Maybe. But that is the landscape we live in right now. 
 
 ### What the company wants
 
-As mentioned above, recommender systems generate a lot of the revenue for many of the major brands in the world. For some, it is the front and center way that a user interacts with the product (ex: Facebook's news feed). For others, it might supplement the core functionality of the product through personalization (ex: Google's search engine) or might be a way to keep a user engaged as long as possible (ex: Youtube's up next feature).
+As mentioned above, recommender systems generate a lot of the revenue for many of the major brands in the world. For some, it is the front and center way that a user interacts with the product (ex: Facebook's news feed). For others, it might supplement the core functionality of the product through personalization (ex: Google's search engine) or might be a way to keep a user engaged as long as possible (ex: YouTube's up next feature).
 
 No matter how you frame it, businesses are businesses, and they are driven by different goals than the consumers. Improving customer experience is paramount for all businesses, and for web-based businesses, this often results in trying to make the experience more personalized for each individual user, creating the need for a recommender system.
 
@@ -46,6 +46,13 @@ Let's take a closer look to how an average website can use recommendations to im
 3. The trial is a resounding success! The A/B tests show that the revenue has increased by 4%, and their monthly active users has increased by 13%!
 4. Company X invests more resources into their personalizations. Multiple Data Scientists are working on implementing better Machine Learning models that perform better and better on their historical data, as they acquire more and more data.
 5. They automate the validation such that they can set specific revenue/user/conversion rate/other KPI targets in any combination and try to optimize it using A/B/n testing, which automatically incorporates any new Machine Learning model, constantly improving the quality of recommendations while achieving better and better targets.
+
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src="/assets/images/posts/recommender-filter-serendipity/kpi.png" alt="KPI chart" width="70%"/>
+        <figcaption><i><a href="https://www.oxfordcollegeofprocurementandsupply.com/procurement-performance-kpis/">image credit</a></i></figcaption>
+    </figure>
+</div>
 
 This is indeed the dream scenario. You have the historical data points that can provide some training targets (loss functions) and testing targets for your Machine Learning models, and even though you know they are not necessarily a good indicator for the real-world value of a recommender system, you have A/B tests to optimize for the real-world results. Everything here can be quantitatively analyzed.
 
@@ -63,6 +70,13 @@ That does not mean we cannot reason about how recommendations _should_ look like
 
 This comes as a no-brainer, but for completeness' sake, this is an area that should not be ignored. If you have a recommender system, you want to make sure that it recommends content that is relevant for the user. If I read exclusively fantasy books, then the recommendations I am getting should be largely biased towards fantasy titles. That does not mean I won't enjoy the occasional action or non-fiction recommendation, but I should not be seeing my recommendations dominated by such genres.
 
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src='/assets/images/posts/recommender-filter-serendipity/books2rec-charlie.png' alt='Example of Books2Rec recommendation' width="100%"/>
+        <figcaption><i>Example of relevant recommendations </i></figcaption>
+    </figure>
+</div>
+
 One culprit of such recommendations is the Collaborative Filtering approach to recommendations. Continuing with the book example, if there's a predominant second genre among the rest of the fantasy readers, collaborative filtering will bubble up that genre to you, even if you do not want to consume it. Worse yet, if the recommender system is relying on explicit ratings (1-5), you usually _have to_ consume and rate it bad in order to get rid of such recommendations.
 
 One way to combat this is using a hybrid model that also leverages content-based recommendations, which is the solution we went with for [Books2Rec]({% post_url 2018-05-13-introducing-books2rec %}). That way, you can balance the collaborative filtering with content similarity.
@@ -76,7 +90,7 @@ To give a personal example, I really like listening to a single song until I'm s
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
         <img src="/assets/images/posts/recommender-filter-serendipity/unagi.gif" alt="Ross unagi" width="70%"/>
-        <figcaption><i><a href="https://media3.giphy.com/media/ubpB6XcvpYMF2/giphy.gif">image source</a></i></figcaption>
+        <figcaption><i><a href="https://media3.giphy.com/media/ubpB6XcvpYMF2/giphy.gif">image credit</a></i></figcaption>
     </figure>
 </div>
 
@@ -96,6 +110,13 @@ The recommender system will keep recommending you the same _type_ of content, bu
 
 > By doing its job too well, a recommender system can reduce your future enjoyment.
 
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src="/assets/images/posts/recommender-filter-serendipity/no_new_item.png" alt="No new items" width="70%"/>
+        <figcaption><i>what happens when no new content is added to a website, <a href="https://arxiv.org/abs/1710.11214">image credit</a></i></figcaption>
+    </figure>
+</div>
+
 Now, of course, a lot of content is produced every day, and there's a very good chance that the best possible content for you is not produced yet. But the fact remains that the top N content for you (or the top N content for the general public) is a hard list to get into, and you might get a better overall enjoyment by spacing the best content.
 
 Another way of thinking about is that we should aim to maximize the long term reward of our recommendations. Put that way, it is easy to draw an analogy to Reinforcement Learning, and to algorithms like MDP (Markov Decision Process) and Bandits, especially in terms of exploration vs exploitation. And sure enough, we can see a lot of interest in Reinforcement Learning for recommender systems in the recent years.
@@ -107,7 +128,7 @@ Another result of the previous scenario is a phenomenon that is called the filte
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
         <img src="/assets/images/posts/recommender-filter-serendipity/filter-bubble.jpg" alt="Filter bubble" width="70%"/>
-        <figcaption><i><a href="https://www.smithsonianmag.com/innovation/have-scientists-found-a-way-to-pop-the-filter-bubble-180948265/">image source</a></i></figcaption>
+        <figcaption><i><a href="https://www.smithsonianmag.com/innovation/have-scientists-found-a-way-to-pop-the-filter-bubble-180948265/">image credit</a></i></figcaption>
     </figure>
 </div>
 
@@ -120,6 +141,13 @@ Note: A related term that is more associated with politics is [echo chamber](htt
 ### Diversification
 
 Diversification is a way in which we can fight the effects of the filter bubble and diminishing returns. Unfortunately, it is not a natural byproduct of recommender systems; instead, we have to work for it.
+
+<div style="margin: 0 auto;max-width: 700px;text-align: center;">
+    <figure>
+        <img src="/assets/images/posts/recommender-filter-serendipity/diverse_youtube.png" alt="My youtube recommendations" width="100%"/>
+        <figcaption><i>My YouTube recommendations</i></figcaption>
+    </figure>
+</div>
 
 I have observed that users can be broadly categorized into two categories in terms of their taste diversity:
 
@@ -169,7 +197,7 @@ A recent paper<sup>[4]</sup> from the researchers at Princeton University discus
 
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
-        <img src="/assets/images/posts/recommender-filter-serendipity/feedback_loop.png" alt="Feedback loop" width="50%"/>
+        <img src="/assets/images/posts/recommender-filter-serendipity/feedback_loop.png" alt="Feedback loop" width="70%"/>
         <figcaption><i><a href="https://arxiv.org/abs/1710.11214">image credit</a></i></figcaption>
     </figure>
 </div>
