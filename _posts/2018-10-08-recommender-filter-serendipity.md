@@ -57,7 +57,7 @@ As mentioned before, there are a couple of practical and ethical issues with thi
 
 In the context of a behemoth like Google, a recommender system has the ability to affect the very fabric of our society, and unfortunately, we are yet to understand the full implications of _how_ it affects the society. It is obvious that Google facilitates a lot of the information flow on the internet, and getting cut off from Google is therefore a huge deal. But when it comes to quantifying the effects of this flow of information, we are stumped.
 
-That does not mean we cannot reason about how recommendations _should_ look like, and talk about some important concepts for recommendations in general. Keep in mind though, all of these concepts are product dependant: you will have to choose whether that is relevant to you or your customers.
+That does not mean we cannot reason about how recommendations _should_ look like, and talk about some important concepts for recommendations in general. Keep in mind though, all of these concepts are product dependent: you will have to choose whether that is relevant to you or your customers.
 
 ### Access to relevant content
 
@@ -65,7 +65,7 @@ This comes as a no-brainer, but for completeness' sake, this is an area that sho
 
 One culprit of such recommendations is the Collaborative Filtering approach to recommendations. Continuing with the book example, if there's a predominant second genre among the rest of the fantasy readers, collaborative filtering will bubble up that genre to you, even if you do not want to consume it. Worse yet, if the recommender system is relying on explicit ratings (1-5), you usually _have to_ consume and rate it bad in order to get rid of such recommendations.
 
-One way to combat this is using a hybrid model that also leverates content-based recommendations, which is the solution we went with for [Books2Rec]({% post_url 2018-05-13-introducing-books2rec %}). That way, you can balance the collaborative filtering with content similarity.
+One way to combat this is using a hybrid model that also leverages content-based recommendations, which is the solution we went with for [Books2Rec]({% post_url 2018-05-13-introducing-books2rec %}). That way, you can balance the collaborative filtering with content similarity.
 
 ### Balance the Diminishing Returns
 
@@ -82,7 +82,7 @@ To give a personal example, I really like listening to a single song until I'm s
 
 Of course, this seemingly runs contrary to the previous notion of getting relevant recommendations; that will hit a point of diminishing returns. The key aspect here is timing: you are likely to get sick of seeing the same type of recommendations (based on your historical data) during a single visit to a website, but when you come back a week later, you don't want to start from somewhere far away from your historical data.
 
-Recommender systems typically make the distinction between historical and contextual (session-based) recommendations. Historical recommenders make use of the full extent of your historical data to find the next thing you would want to watch, while contextual recommenders take a look at your current session (think of it like the last hour of your Spotify/Youtube session) and predict what would best fit to you _right now_.
+Recommender systems typically make the distinction between historical and contextual (session-based) recommendations. Historical recommenders make use of the full extent of your historical data to find the next thing you would want to watch, while contextual recommenders take a look at your current session (think of it like the last hour of your Spotify/YouTube session) and predict what would best fit to you _right now_.
 
 Of course, these two systems are not cut and dried, there is most certainly an overlap, and the right recommender system is somewhere in between. Contextual models work best when the opportunity cost is low, and where rapid consumption is viable. Diminishing returns is also more of an issue with the contextual models.
 
@@ -102,7 +102,7 @@ Another way of thinking about is that we should aim to maximize the long term re
 
 ### Filter Bubble
 
-Another result of the previous scenario is a phenomenon that is called the filter bubble. Coined by Eli Pariser and made famous by his book of the same name, fiter bubble is the idea that you become trapped inside a bubble wherein only the information that a personalization algorithm (a filter) thinks you would like gets passed in. As you give the system more and more data, your bubble becomes smaller and smaller, a niche within a niche. You get trapped in a positive feedback loop with no escape.
+Another result of the previous scenario is a phenomenon that is called the filter bubble. Coined by Eli Pariser and made famous by his book of the same name, filter bubble is the idea that you become trapped inside a bubble wherein only the information that a personalization algorithm (a filter) thinks you would like gets passed in. As you give the system more and more data, your bubble becomes smaller and smaller, a niche within a niche. You get trapped in a positive feedback loop with no escape.
 
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
@@ -139,9 +139,9 @@ The problem with diversity is that it is hard to measure exactly how diverse a s
 
 ### Serendipity
 
-Taking one more step forward from diversity, we come to the concept of serendipity, which is finding something valueable or beneficial while not looking for it, a happy coincidence. It is finding something that simply blows you away.
+Taking one more step forward from diversity, we come to the concept of serendipity, which is finding something valuable or beneficial while not looking for it, a happy coincidence. It is finding something that simply blows you away.
 
-I like dividing serenpidity into two categories: immediate and eventual. Immediate serendipity happens, well, immediately. You're walking along the streets, and you look up - without any specific reason - and see the Empire State building.
+I like dividing serendipity into two categories: immediate and eventual. Immediate serendipity happens, well, immediately. You're walking along the streets, and you look up - without any specific reason - and see the Empire State building.
 
 <div style="margin: 0 auto;max-width: 700px;text-align: center;">
     <figure>
@@ -182,7 +182,7 @@ The major claims made in the paper are as follows:
 
 Without going into details, researchers model a realistic interaction sequence between users being recommended items, recommender system getting the results of those interactions, and updating its recommendations with that data and with new items that are introduced over time.
 
-Researchers show that in terms of total utility, using confounded data works best with content-based models and social (trust-based) models, but do not have a significant advantage when using with Matrix Factorization models. Moreover, they show that evaluating the model using the confounded data generated by the same model leads to a greater improvement in scores compared to using the confounded data genrated by a different model.
+Researchers show that in terms of total utility, using confounded data works best with content-based models and social (trust-based) models, but do not have a significant advantage when using with Matrix Factorization models. Moreover, they show that evaluating the model using the confounded data generated by the same model leads to a greater improvement in scores compared to using the confounded data generated by a different model.
 
 Evaluating your model with confounded data may therefore overstate the performance of your model.
 
