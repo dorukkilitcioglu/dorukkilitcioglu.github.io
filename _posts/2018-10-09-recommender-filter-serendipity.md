@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Recommender Systems: From Filter Bubble to Serendipity"
-date: 2018-10-06 9:30:00 -0400
+date: 2018-10-09 9:30:00 -0400
 categories: data-science machine-learning
 tags: recommender-systems
 image: /assets/images/posts/recommender-filter-serendipity/feedback_loop.png
