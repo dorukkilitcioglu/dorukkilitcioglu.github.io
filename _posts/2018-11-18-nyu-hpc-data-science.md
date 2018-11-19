@@ -58,7 +58,7 @@ On Prince, download one of the `rmate` implementations linked above inside above
 You also have to make sure you set the relevant `rmate` variables in Prince, so add these to your `.bash_profile`:
 ```
 export RMATE_HOST=localhost
-export RMATE_PORT=<port_rmate>/
+export RMATE_PORT=<port_rmate>
 ```
 
 Now you should be able to do `rmate filename.txt` and edit it in your local Sublime Text. Even with port forwarding it twice!
