@@ -54,6 +54,8 @@ highlighter: rouge
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+    - assets/misc/nyu-hpc-data-science
 
 # Google Analytics Tracking ID goes here:
 google_analytics: UA-116136021-1
