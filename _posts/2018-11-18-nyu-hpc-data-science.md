@@ -11,7 +11,7 @@ I've been lately getting a lot of question about my setup for NYU's High Perform
 
 ## Requirements
 
-1. [NYU Prince access](https://wikis.nyu.edu/display/NYUHPC/Request+or+Renew).
+1. [NYU Prince access](https://wikis.nyu.edu/display/NYUHPC/Request+or+Renew). You should also `ssh` into it directly from NYU at least once, because your computer needs to add its host key to your known hosts.
 2. Some terminal that allows you to `ssh`. If you're on Windows, I highly suggest using [Windows Subsystem for Linux]({% post_url 2018-05-06-data-science-workflow-ubuntu-windows %}).
 3. 2 ports that are above `10000`. One will be used for `rmate`, the other for Jupyter Notebook. We will call them `port_rmate` and `port_jupyter`.
 
