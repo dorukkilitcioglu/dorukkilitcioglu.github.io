@@ -6,8 +6,16 @@ icon: fa-folder
 ---
 Listed below are my projects revolving around Machine Learning/Data Science.
 
+### [cu2rec: GPU Accelerated Matrix Factorization for Recommender Systems](https://github.com/nickgreenquist/cu2rec)
+<sub>Recommender Systems · Machine Learning · CUDA · C++</sub>  
+<br/>
+<img src="assets/images/projects/cu2rec.png" title="https://github.com/nickgreenquist/cu2rec" width = "70%" />  
+· Built _(in CUDA)_ a Matrix Factorization library optimized for Recommender Systems  
+· Implemented parallel Stochastic Gradient Descent optimized for GPUs  
+· Reached error metrics similar to the best sequential versions while being 10x faster  
+
 ### [Books2Rec: Machine Learning meets Reading](https://books2rec.me)
-<sub>Recommender Systems · Machine Learning · Latent Factor Models</sub>  
+<sub>Recommender Systems · Machine Learning · Latent Factor Models · Python</sub>  
 <br/>
 <img src="assets/images/projects/books2rec.png" title="https://books2rec.me" width = "70%" />  
 · Built a hybrid Recommender System, using Goodreads book ratings and book features  
