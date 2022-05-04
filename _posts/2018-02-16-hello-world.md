@@ -1,8 +1,11 @@
 ---
-layout: post
 title:  "Hello World"
+categories:
+ - misc
+tags:
+ - representation-learning
+layout: single
 date:   2018-02-16 21:27:00 -0500
-categories: misc
 redirect_from: "/misc/2018/02/17/hello-world.html"
 ---
 

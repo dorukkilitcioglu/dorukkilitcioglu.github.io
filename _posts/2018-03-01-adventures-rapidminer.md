@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "Adventures with RapidMiner"
 date: 2018-03-01 11:25:00 -0500
-categories: data-science
-tags: rapidminer recommender-systems
+categories:
+ - data-science
+tags:
+ - rapidminer
+ - recommender-systems
+layout: single
 image: /assets/images/posts/adventures-rapidminer/rp.png
 redirect_from: "/data-science/2018/03/01/adventures-rapidminer.html"
 ---

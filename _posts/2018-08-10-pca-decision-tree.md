@@ -1,9 +1,15 @@
 ---
-layout: post
 title:  "Why you should use PCA before Decision Trees"
 date:   2018-08-10 22:50:00 -0400
-categories: data-science machine-learning
-tags: dimensionality-reduction pca decision-tree representation-learning
+categories:
+ - data-science
+ - machine-learning
+tags:
+ - dimensionality-reduction
+ - pca
+ - decision-tree
+ - representation-learning
+layout: single
 image: /assets/images/posts/pca-decision-tree/pca_decision_tree.png
 redirect_from: "/data-science/machine-learning/2018/08/11/pca-decision-tree.html"
 ---

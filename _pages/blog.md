@@ -1,9 +1,8 @@
 ---
-layout: blog
-title: Blog
-icon: fa-book
-permalink: blog
-order: 3
-auto-header: <h2 style="font-weight:bold">Doruk's Sporadic Musings</h2>
+title: "Doruk's Blog"
+permalink: /blog/
+layout: posts
+author_profile: true
 ---
+
 a collection of posts about <a href="/blog/data-science">DS</a>/<a href="/blog/machine-learning">ML</a>/<a href="/blog/programming">CS</a>

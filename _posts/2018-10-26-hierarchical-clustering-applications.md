@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "Hierarchical Clustering and its Applications"
 date: 2018-10-26 9:30:00 -0400
-categories: data-science machine-learning
-tags: clustering
+categories:
+ - data-science
+ - machine-learning
+tags:
+ - clustering
+layout: single
 image: /assets/images/posts/hierarchical-clustering-applications/senator_clusters.png
 ---
 

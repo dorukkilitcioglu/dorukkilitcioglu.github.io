@@ -1,9 +1,11 @@
 ---
-layout: post
 title:  "Representation Learning: An Introduction"
 date:   2018-02-24 12:01:00 -0500
-categories: machine-learning
-tags: representation-learning
+categories:
+ - machine-learning
+tags:
+ - representation-learning
+layout: single
 image: /assets/images/posts/representation-learning-1/word_repr.png
 redirect_from: "/machine-learning/2018/02/24/representation-learning-introduction.html"
 ---

@@ -14,35 +14,71 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Doruk Kilitcioglu
-subtitle: data is life
-email: doruk.kilitcioglu@nyu.edu
+#subtitle: data is life
+email: doruk.kilitcioglu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal webpage of Doruk Kilitcioglu
+twitter_username: dklt_
+github_username: dorukkilitcioglu
+minimal_mistakes_skin: air
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dorukkilitcioglu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-author: Doruk Kilitcioglu
-avatar: assets/images/PPFilled.png
+
+# Page Content
+## Side bar / Author
+author:
+  name: "Doruk Kilitcioglu"
+  avatar: "/assets/images/PPFilled.png"
+  bio: "Machine Learning/Data Science enthusiast and Data Scientist @ Fidelity Investments"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/dklt_"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dorukkilitcioglu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dorukkilitcioglu/"
+    - label: "Email"
+      icon: "fab fa-fw fa-envelope"
+      url: "mailto:doruk.kilitcioglu@gmail.com"
+
+## Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/dklt_"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dorukkilitcioglu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dorukkilitcioglu/"
+    - label: "Email"
+      icon: "fab fa-fw fa-envelope"
+      url: "mailto:doruk.kilitcioglu@gmail.com"
+
 permalink: /:year/:month/:day/:title:output_ext
-# twitter_username: jekyllrb
-# github_username:  dorukkilitcioglu
-github_url: https://github.com/dorukkilitcioglu
-# googleplus_url:
-# instagram_url:
-linkedin_url: https://www.linkedin.com/in/dorukkilitcioglu/
-# pinterest_url:
-# slack_url:
-twitter_url: https://twitter.com/dklt_
+
 
 # Build settings
 markdown: kramdown
-# theme: jekyll-theme-prologue
-remote_theme: dorukkilitcioglu/jekyll-theme-prologue
+#theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 collections: [sections]
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
-  - jekyll-redirect-from
+  - jemoji
+  - jekyll-include-cache
 highlighter: rouge
 
+include:
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -58,4 +94,21 @@ exclude:
     - assets/misc/nyu-hpc-data-science
 
 # Google Analytics Tracking ID goes here:
-google_analytics: UA-116136021-1
+#google_analytics: UA-116136021-1
+analytics:
+  provider: "google-universal"
+  google:
+    tracking_id: "UA-116136021-1"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "Introducing persistd"
 date: 2018-08-05 10:07:00 -0400
-categories: programming
-tags: windows workflow
+categories:
+ - programming
+tags:
+ - windows
+ - workflow
+layout: single
 image: /assets/images/projects/persistd.png
 redirect_from: "/programming/2018/08/05/introducing-persistd.html"
 ---

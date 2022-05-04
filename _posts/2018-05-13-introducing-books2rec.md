@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "Introducing Books2Rec"
 date: 2018-05-13 21:25:00 -0400
-categories: data-science machine-learning
-tags: recommender-systems
+categories:
+ - data-science
+ - machine-learning
+tags:
+ - recommender-systems
+layout: single
 image: /assets/images/posts/introducing-books2rec/books2rec-charlie-itemmatrix.png
 redirect_from: "/data-science/machine-learning/2018/05/14/introducing-books2rec.html"
 ---

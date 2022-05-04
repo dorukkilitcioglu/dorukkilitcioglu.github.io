@@ -1,9 +1,16 @@
 ---
-layout: post
 title: "Data Science workflow using Ubuntu Subsystem on Windows"
 date: 2018-05-06 13:08:00 -0400
-categories: data-science programming
-tags: ubuntu windows bash eclipse jupyter-notebook
+categories:
+ - data-science
+ - programming
+tags:
+ - ubuntu
+ - windows
+ - bash
+ - eclipse
+ - jupyter-notebook
+layout: single
 image: /assets/images/posts/data-science-workflow-ubuntu-windows/wsl.png
 redirect_from: "/data-science/programming/2018/05/06/data-science-workflow-ubuntu-windows.html"
 ---

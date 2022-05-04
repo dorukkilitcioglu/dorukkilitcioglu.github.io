@@ -1,9 +1,15 @@
 ---
-layout: post
 title:  "Representation Learning through Matrix Factorization"
 date:   2018-09-10 9:30:00 -0400
-categories: machine-learning data-science
-tags: dimensionality-reduction pca svd representation-learning
+categories:
+ - machine-learning
+ - data-science
+tags:
+ - dimensionality-reduction
+ - pca
+ - svd
+ - representation-learning
+layout: single
 image: /assets/images/posts/representation-learning-2/svd.png
 ---
 

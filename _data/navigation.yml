@@ -1,0 +1,7 @@
+main:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Resume
+    url: /assets/DorukKilitciogluResume.pdf

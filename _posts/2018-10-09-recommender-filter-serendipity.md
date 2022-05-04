@@ -1,9 +1,12 @@
 ---
-layout: post
 title: "Recommender Systems: From Filter Bubble to Serendipity"
 date: 2018-10-09 9:30:00 -0400
-categories: data-science machine-learning
-tags: recommender-systems
+categories:
+ - data-science
+ - machine-learning
+tags:
+ - recommender-systems
+layout: single
 image: /assets/images/posts/recommender-filter-serendipity/feedback_loop.png
 ---
 Recommender systems power a lot of our day to day interactions with the content we see on the internet. With over 2.5 quintillion bytes of data created each day, the last two years alone make up 90% of the data in the world <sup>[1]</sup>. We produce content at a level that is simply impossible to consume in one lifetime, and that makes recommender systems inevitable. However, as Uncle Ben said, with great power comes great responsibility. Here I talk about some of the practical and ethical problems that recommender systems raise, and how we can go about solving them.

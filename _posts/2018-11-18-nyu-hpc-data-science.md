@@ -1,9 +1,15 @@
 ---
-layout: post
 title: "Running Jupyter Notebook on NYU HPC in 3 Clicks"
 date: 2018-11-18 18:30:00 -0500
-categories: data-science programming
-tags: ubuntu bash anaconda jupyter-notebook
+categories:
+ - data-science
+ - programming
+tags:
+ - ubuntu
+ - bash
+ - anaconda
+ - jupyter-notebook
+layout: single
 image: /assets/images/posts/nyu-hpc-data-science/slurm.png
 ---
 

@@ -1,9 +1,11 @@
 ---
-layout: post
 title: "A case for better Python docstrings"
 date: 2018-08-17 20:27:00 -0400
-categories: programming
-tags: python
+categories:
+ - programming
+tags:
+ - python
+layout: single
 image: /assets/images/posts/python-better-docstring/python-docstring.png
 redirect_from: "/programming/2018/08/18/python-better-docstring.html"
 ---
